@@ -19,10 +19,6 @@ function SingleCard({ img, title, code, demo, id }) {
           {title}
         </Typography>
       </CardContent>
-      {/* <CardActions>
-        <Button size="small">{id}</Button>
-        <Button size="small">{id}</Button>
-      </CardActions> */}
     </Card>
   );
 }

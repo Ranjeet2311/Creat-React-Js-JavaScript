@@ -5,7 +5,6 @@ import Card from "./SingleCard";
 function ProductDisplay({ dataList, nextFunction }) {
   return (
     <div>
-      {" "}
       <InfiniteScroll
         dataLength={dataList.length}
         className="product-display"

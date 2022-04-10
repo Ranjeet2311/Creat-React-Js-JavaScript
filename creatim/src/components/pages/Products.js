@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import productData from "../FilterData";
-
 import axios from "axios";
 import SelectionTabs from "../SelectionTabs";
 import ProductDisplay from "../ProductDisplay";
@@ -53,11 +51,11 @@ function Products() {
   }
 
   function filterHandler(Categoty) {
-    if (!productData) {
+    if (!totalData) {
       return "Loading....";
     } else {
       setDataList(() => {
-        return productData.filter((item, i) => {
+        return totalData.filter((item, i) => {
           return item.ref === Categoty;
         });
       });
