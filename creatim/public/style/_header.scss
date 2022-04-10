@@ -1,0 +1,17 @@
+.header {
+  background: #56ccf2; 
+  background: -webkit-linear-gradient(to right, #56ccf2, #2f80ed); 
+  background: linear-gradient(to right, #56ccf2, #2f80ed); 
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+  .news-logo {
+   
+    padding: 12px 20px;
+    width: 40px;
+    filter: invert(1);
+
+  }
+}

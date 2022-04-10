@@ -1,0 +1,106 @@
+.Navbar-wrap {
+   background: #56ccf2; 
+  background: -webkit-linear-gradient(to right, #56ccf2, #2f80ed); 
+  background: linear-gradient(to right, #56ccf2, #2f80ed); 
+  padding: 12px 16px;
+  position: fixed;
+  width: 100%;
+  top: 72px;
+  z-index: 1;
+
+
+  .burger-menu {
+    position: absolute;
+    top: -3rem;
+    right: 4rem;
+    // display: none;
+    cursor: pointer;
+    display: block;
+
+    // @include at-900px() {
+    //   display: block;
+    // }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    // @include at-900px {
+    //   flex-direction: column;
+    // }
+
+    li {
+      list-style: none;
+      list-style: none;
+      margin: 10px auto;
+      font-size: 22px;
+
+      // @include at-900px {
+      //   margin: 60px 10px;
+      //   font-size: 1.5rem;
+      // }
+
+      a {
+        border-bottom: 2px solid transparent;
+        text-decoration: none;
+        color: white;
+        font-family: "Public Sans", sans-serif;
+        &:hover {
+          border-bottom: 4px solid white;
+        }
+
+        // @include at-900px {
+        //   font-size: 2rem;
+        // }
+      }
+    }
+
+    .search {
+      // position: absolute;
+      // right: 100px;
+      // top: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      // @include at-900px {
+      //   position: revert;
+      // }
+    }
+  }
+}
+
+// ---------------
+.menu-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.4s ease-out;
+  height: 100vh;
+
+  // @include at-900px() {
+  //   flex-direction: column;
+  //   transition: all 0.4s ease-out;
+  //   height: 100vh;
+  // }
+}
+
+.menu-list-close {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.4s ease-out;
+  transform: translateX(-700rem);
+  height: 10px;
+  width: 96vw;
+
+  // @include at-900px() {
+  //   flex-direction: column;
+  //   transition: all 0.4s ease-out;
+  //   transform: translateX(-700rem);
+  //   height: 10px;
+  //   width: 96vw;
+  // }
+}
